@@ -190,12 +190,17 @@ nav img {
     transition: color 0.1s ease-in;
 }
 
-.bio-link i {
+.bio-link a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bio-link a i {
     margin: 2px 5px;
     cursor: pointer;
 }
 
-.bio-link i:hover {
+.bio-link a i:hover {
     color: #ba1e48;
     transition: color 0.1s ease-out;
 }
