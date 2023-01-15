@@ -14,9 +14,10 @@ html {
 
 p {
     font-size: 1.7rem;
+    color: gray;
 }
 
-/* Navigation bar */
+/* ------------------------------Navigation bar------------------------------ */
 #nav-bar {
     display: flex;
     width: 100%;
@@ -33,9 +34,9 @@ p {
 
 #hero nav.compact {
     background-color: white;
-    border-bottom: 1px solid #8d8d8d;
+    /* border-bottom: 1px solid #8d8d8d; */
     height: 70px;
-    box-shadow: 0px 0.5px 1px #8d8d8d;
+    box-shadow: 0px 1px 15px 1px #bababa;
     transition-property: height, background-color;
     transition: 0.5s ease;
 }
@@ -83,7 +84,7 @@ nav img {
     transition: 0.2s ease-in;
 }
 
-/* Hero section */
+/* ------------------------------Hero section------------------------------ */
 .container {
     width: 100%;
     height: 100vh;
@@ -131,11 +132,11 @@ nav img {
     transition-property: background-color, color;
 }
 
-/* member section */
+/* ------------------------------member section------------------------------ */
 
 .member-container {
     width: 100%;
-    height: 500px;
+    height: 100%;
     position: relative;
     overflow: hidden;
     /* background-color: #ea3c69; */
@@ -157,7 +158,7 @@ nav img {
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: 300;
-    padding: 1.5%;
+    padding: 15px;
     letter-spacing: 7px;
 }
 
@@ -166,13 +167,13 @@ nav img {
     display: flex;
     align-items: center;
     min-width: 100%;
-    height: 100%;
+    max-height: 500px;
     padding: 0 3%;
     /* display: inline-block; */
     /* background-color: blue; */
 }
 
-.col h1, h2, .bio-link {
+.col h1,.col h2, .bio-link {
     /* background-color: aliceblue; */
     margin: 5px;
     height: fit-content;
@@ -249,7 +250,6 @@ span {
 
 .info p {
     padding: 0 6% 0 1%;
-    color: gray;
 }
 
 #prev-button, #next-button {
@@ -262,7 +262,8 @@ span {
 
 #prev-button {
     top: 50%;
-    left: 1.5%
+    transform: translate(0, -50%);
+    left: 1.5%;
 }
 
 #prev-button:hover {
@@ -272,6 +273,7 @@ span {
 
 #next-button {
     top: 50%;
+    transform: translate(0, -50%);
     right: 1.5%;
 }
 
@@ -279,6 +281,63 @@ span {
     color: rgb(95, 95, 95);
     transition: color 0.3s ease;
 }
+
+.member-info {
+    width: 100%;
+    background-color: #001220;
+    position: relative;
+}
+
+.member-info div:first-child {
+    z-index: 1;
+    /* position: absolute; */
+}
+
+.member-info div:nth-child(n+2) {
+    z-index: 10;
+    background-color: #ba1e48;
+}
+
+/* .transitional-svg {
+    position: absolute;
+
+} */
+
+/* ------------------------------project section------------------------------ */
+.container-v2 {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.center h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.pj-body a {
+    display: inline-block;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white;
+    padding: 1% 1.6%;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
+    border-radius: 35px;
+    background: rgb(226,20,83);
+    background: linear-gradient(45deg, rgba(226,20,83,1) 0%, rgba(218,81,51,1) 100%);
+}
+
+
+.center {
+    text-align: center;
+}
+
+.center p{
+    margin: 2rem;
+}
+
+
 
 /* Don't mind this */
 /* <a href="https://www.freepik.com/free-photo/young-man-sportswear-exercise-class-gym_4833325.htm#query=fitness&position=0&from_view=search&track=sph">Image by jcomp</a> on Freepik */
