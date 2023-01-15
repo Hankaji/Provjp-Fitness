@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" >
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="js/main.js" defer></script>
         <title>Provjp Fitness</title>
     </head>
     <body>
@@ -16,9 +17,9 @@
                 <div id="list-bar">
                     <ul>
                         <li><a class="list-item" href="#">Home</a></li>
-                        <li><a class="list-item" href="#">Project</a></li>
-                        <li><a class="list-item" href="#">Team Profile</a></li>
-                        <li><a class="list-item" href="#">Contact</a></li>
+                        <li><a class="list-item" href="#member">Team Profile</a></li>
+                        <li><a class="list-item" href="#projects">Project</a></li>
+                        <li><a class="list-item" href="#footer">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -31,12 +32,19 @@
             </div>
         </section>
 
-        <!-- Members section -->
+        <!-- Team profile -->
         <section id="member">
-            <div class="header">
-                <h1>Team <span>Profile</span></h1>
+            <div class="header-block">
+                <h1 class="header">Team <span>Profile</span></h1>
+            </div>
+            <div class="container-v2">
+                <h2 class="subheader">Group Processes</h2>
+                <p class="center-p">
+                    To be honest, we were a bit struggling at the beginning of this assignment because we did not know where to start and there were no samples or experiences among us. We came up with a plan and we set a time limit for each task; we did not want to waste too much time on 1 specific part which could lead to late submission.  After that, we gradually caught up with the pace so we easily followed our plan that had been set up. Then we finally finished our proposal task 2 days ahead of schedule and our official assignment was fully completed before submission.
+                </p>
             </div>
             <div class="member-container">
+                <h2 class="subheader">Team members</h2>
                 <div class="member-slide">
                     <div class="slide-item">
                         <!-- cover -->
@@ -131,51 +139,100 @@
 
             <!-- member info  -->
             <div class="member-info">
-                <div class="transitional-svg">
-                    <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                        <rect x="0" y="0" width="900" height="600" fill="#001220">
-    
-                        </rect>
-                        <path d="M0 205L16.7 206.3C33.3 207.7 66.7 210.3 100 209.7C133.3 209 166.7 205 200 209.2C233.3 213.3 266.7 225.7 300 221C333.3 216.3 366.7 194.7 400 190.3C433.3 186 466.7 199 500 209.3C533.3 219.7 566.7 227.3 600 222.3C633.3 217.3 666.7 199.7 700 196.7C733.3 193.7 766.7 205.3 800 212.8C833.3 220.3 866.7 223.7 883.3 225.3L900 227L900 0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0 600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300 0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z" fill="#441b3b">
-    
-                        </path>
-                        <path d="M0 167L16.7 169C33.3 171 66.7 175 100 179.3C133.3 183.7 166.7 188.3 200 183.3C233.3 178.3 266.7 163.7 300 161.5C333.3 159.3 366.7 169.7 400 171.3C433.3 173 466.7 166 500 168.3C533.3 170.7 566.7 182.3 600 185.3C633.3 188.3 666.7 182.7 700 178.7C733.3 174.7 766.7 172.3 800 172.7C833.3 173 866.7 176 883.3 177.5L900 179L900 0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0 600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300 0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z" fill="#704f67"></path><path d="M0 106L16.7 110C33.3 114 66.7 122 100 129.2C133.3 136.3 166.7 142.7 200 145.5C233.3 148.3 266.7 147.7 300 138.7C333.3 129.7 366.7 112.3 400 110.7C433.3 109 466.7 123 500 128C533.3 133 566.7 129 600 126C633.3 123 666.7 121 700 116.2C733.3 111.3 766.7 103.7 800 107.8C833.3 112 866.7 128 883.3 136L900 144L900 0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0 600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300 0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z" fill="#9e8697"></path><path d="M0 78L16.7 77.2C33.3 76.3 66.7 74.7 100 77C133.3 79.3 166.7 85.7 200 91.5C233.3 97.3 266.7 102.7 300 101.7C333.3 100.7 366.7 93.3 400 87.5C433.3 81.7 466.7 77.3 500 75.8C533.3 74.3 566.7 75.7 600 79.5C633.3 83.3 666.7 89.7 700 88.3C733.3 87 766.7 78 800 76.3C833.3 74.7 866.7 80.3 883.3 83.2L900 86L900 0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0 600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300 0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z" fill="#cec1ca"></path><path d="M0 29L16.7 33C33.3 37 66.7 45 100 45.3C133.3 45.7 166.7 38.3 200 35.3C233.3 32.3 266.7 33.7 300 38.5C333.3 43.3 366.7 51.7 400 54.5C433.3 57.3 466.7 54.7 500 50.2C533.3 45.7 566.7 39.3 600 40.7C633.3 42 666.7 51 700 54.5C733.3 58 766.7 56 800 55.7C833.3 55.3 866.7 56.7 883.3 57.3L900 58L900 0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0 600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300 0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z" fill="#ffffff">
-    
-                        </path>
-                    </svg>
+                <div class="spacer layered-wave"></div>
+                <div class="container-v2">
+                    <p class="view tooltip" style="font-size: 1.5rem;"><em onmouseenter="tooltipEnter()" onmouseleave="tooltipLeave()">currently viewing Dao Bao Duy</em>
+                    <span class="tooltiptext">Change view by selecting member above</span>
+                    </p> <!-- this text is edited via js -->
                 </div>
-                <div class="container-v2" style="padding-top: 300px;">
-                    <p style="color: white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis commodi, eaque sed aperiam repudiandae rerum corrupti quisquam quas esse praesentium quod hic! Dolores eos facilis atque expedita quaerat vel harum.</p>
+
+                <!-- Dao Bao Duy -->
+                <div class="container-v2 tab_content tab-active">
+                    <h2 class="subheader">Career Plan</h2>
+                    <p>
+                        In my opinion, web and mobile development are suitable for me to find out more knowledge and improve my skills in this field. Firstly, in this field, there are many chances to find a job with various positions like front-end or back-end jobs. Secondly, It helps me develop my solving problem skill because when I get some problems while working on a project, I tend to find out many solutions to solve the problem face with. The next thing is that in the 4.0 era, the Internet is the thing people interact with every day so working in this field can help our world more develop and convenience. To be honest, I really want to work in the web field especially web developer.
+                    </p>
+                    <h2 class="subheader">Reflection</h2>
+                    <p>
+                        After working on this assignment with my teammates, I found that I tried my best in this project despite lacking some knowledge. However, I want to improve all of the knowledge that I am not yet achieved. I am also very happy to work with my teammates in this course because they help me develop my knowledge and improve my computer skills. In this project, I mostly contribute as a presenter and write the report. I think that our team unity is the most important thing to make this project successful because each person in my team has a different strong point so that when we combine these skills together, we can make our project finish although sometimes we have some troubles with this assignment. If we have a problem with our project, we will try to find solutions and decide which is the best for our project. In my opinion, we want to have more time to make some functions come true and add more useful features to help our app support more users. Working with my teammates and improving my computing skill are two things that make me feel very interested in this project. In short, I am very proud of my team because we built up this app, and had a great time when we worked together.
+                    </p>
                 </div>
+                <!-- Anh Minh -->
+                <div class="container-v2 tab_content">
+                    <h2 class="subheader">Career Plan</h2>
+                    <p>
+                        After I did a test on <a href="https://www.16personalities.com/" target="_blank">16 Personalities</a>, I figured out that my ideal job would be relevant to the Mobile and Web development field (nearly the same as my teammates’ choices). The reason why I decided to take part in this area is because I would love to come up with solutions for any difficulties that customers are struggling to deal with. Also, my characteristics relate to social engagement, which offer me to discuss, befriend and support our group’s potential users. To be honest, my teammates’ purpose of choosing this field might not be too different from mine, we all want to create something that could be useful and practical; that is why we planned to develop a fitness app with a view to reducing chances of people getting unwell. However, my role would mainly focus on giving out solutions and dealing with customers (processing forms sent by users, collaborating with other brands, …) rather than develop functions for apps/websites. 
+                    </p>
+                    <h2 class="subheader">Reflection</h2>
+                    <p>
+                        As I have completed our final assessment with my group, I considered myself to be quite good when I achieved all of my tasks punctually. Also, I see that my team has finished every objective beyond our expectations; so I am very proud of my team. Despite lacking time and experience, our team still remained calm and slowly dealt with every setback one by one. However, if we could improve our project, we would add more features into our app. Also, we would have a more specific and straightforward plan in order to complete assignments more effectively. Surprisingly, when we concluded our program, there were some minor issues that made our presentation slides looked a bit messy and clumsy; luckily, Mr. Long did not mention that flaw but only asked us about what would A.I use to detect our users’ movements since we missed that part in our slides (actually we were scared of having not enough time to present so we had decided to exclude that piece of information and tried to deliver our best version of presenting). After having done this project with my team, I have learnt so many traits from them but the most important of them all is punctuality. Although having had a pile of deadlines to meet, our team excellently accomplished each requirement step-by-step. Overall, we are happy with our product and we would like to say thank you to our lecturer for giving us a great opportunity to participate in such a meaningful assignment.
+                    </p>
+                </div>
+                <!-- Hoang Thai Phuc -->
+                <div class="container-v2 tab_content">
+                    <h2 class="subheader">Career Plan</h2>
+                    <p>
+                        I have always been loving to make apps for myself since I was in grade 10, which is why i have decided to choose to study Web and Mobile development as a full-stack developer. This field not only enhancing my knowledge about improving user interface design and back-end coding but it is also among the popular jobs nowadays, which will increase the chance for me to apply for job in my favourite company in the future. Furthermore, my characteristics include problem solving, which is why I enjoy programming because it requires hard effort and the capacity to focus. I believe that in the future, when I get to experience the next era of web, web 3, I will be able to be more creative and inventive in web design.
+                    </p>
+                    <h2 class="subheader">Reflection</h2>
+                    <p>
+                        As I was doing this assignment, it appeared that I could contribute much to the project despite having little to no programming knowledge. Every member of my team was also highly cooperative since we achieved our goal on schedule despite the fact that none of us had any prior expertise in this industry. However, a few problems I had were that I added very few features to our app, which made it not stand out to the other group. If I could, I would improve the app's look and functionalities while also assigning tasks more properly to my team members. When I was presenting with the group, I thought that it could have gone badly as we were really scared, but it turned out to be the opposite, my partner and I were able to comfortably pitch in front of the class as well as improvise fresh ideas during the pitching, and subsequently, the presentation was excellent. Throughout the project, my team has helped me learn many new skills such as communication skills and time management. Moreover, regarding the website, I was able to learn three new programming languages, which were HTML, CSS, and Javascript, as well as acquire problem-solving skills during the process of making and deploying the website.
+                    </p>
+                </div>
+                <!-- Tran Luu Quang Tung -->
+                <div class="container-v2 tab_content">
+                    <h2 class="subheader">Career Plan</h2>
+                    <p>
+                        For me, I believe the job that would be suitable with my personality is in the web development field because I want to improve the user's experience and create helpful applications. Moreover, this field allows me to make more interactive websites that can contribute to enhancing people's lives. Some other members also choose the same field as me because this field offers great job opportunities and gives us the chance to make useful, closer to our lives needs, but their main focus on the web or applications aspects might be different. Personally, I prefer the front-end side and designing the UI, UX because I am interested in designing and creating practical web applications.
+                    </p>
+                    <h2 class="subheader">Reflection</h2>
+                    <p>
+                        Our team has good cooperation and everyone is working hard to contribute to the project so the project progress is finishing effectively at a steady pace. We have many creative and good ideas, however, the problem is that some of them are not practical and some others are arduous when compared with our ability. I was surprised by our presentation because most of our members are not confident when speaking in public. However, It was better than I thought and we were able to cover every necessary content in our presentation without exceeding the time limit. I have learned many new things from my team, such as, writing a formal report, managing timetable, designing UI.
+                    </p>
+                </div>
+                <div class="spacer layered-wave-out"></div>
             </div>
         </section>
 
         <!-- Projects section -->
         <section id="projects">
             <div class="container-v2">
-                <div class="header">
-                    <h1><span>Our</span> Project</h1>
+                <div class="header-block">
+                    <h1 class="header"><span>Our</span> Project</h1>
                 </div>
                 <!-- project description -->
                 <div class="pj-body center project">
-                    <h2>We make your fitness better</h2>
+                    <h2 class="subheader">We make your fitness better</h2>
                     <p>In this project, we intend to create a fitness app equipped with A.I technology that can be the users’ private professional trainer. 
                         The app can support users in creating their own workout plan based on the statistics of users and their timetable, 
                         sharing useful medical knowledge, and diagnosing users’ disease based on their recorded data during their workout...</p>
                     <a href="html/projectpage.html">Read more...</a>
                 </div>
                 <!-- features description -->
-                <div class="ft-body center features">
-                    <h2>Features</h2>
+                <!-- <div class="ft-body center features">
+                    <h2 class="subheader">Features</h2>
                     <div class="feature-box">
                         <div class="feature-item">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </body>
-    <footer>
-        <script src="js/main.js"></script>
+    <footer id="footer">
+        <div class="footer-content">
+            <h3>Contact</h3>
+            <p>s3978081@rmit.edu.vn</p>
+            <p>012-345-6789</p>
+            <ul class="socials">
+                <li><a href="https://docs.google.com/document/d/1kOWuOz0Q8hREYPIZuspcRARqkCk5rloHAd4QQ0jnF5Q/edit?usp=sharing"><i class="ri-article-line"></i></a></li>
+                <li><a href="https://github.com/Hankaji/Provjp-Fitness"><i class="ri-github-fill"></i></a></li>
+                <li><a><i class="ri-mail-line"></i></a></li>
+                <li><a><i class="ri-youtube-fill"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Provjp Fitness. designed by <span>Hoang Thai Phuc</span></p>
+        </div>
     </footer>
 </html>

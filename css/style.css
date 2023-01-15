@@ -133,6 +133,11 @@ nav img {
 }
 
 /* ------------------------------member section------------------------------ */
+.center-p {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
 
 .member-container {
     width: 100%;
@@ -149,11 +154,11 @@ nav img {
     /* background-color: green; */
 }
 
-.header {
+.header-block {
     height: 20%;
 }
 
-.header h1 {
+.header{
     text-align: center;
     text-transform: uppercase;
     font-size: 5rem;
@@ -282,37 +287,88 @@ span {
     transition: color 0.3s ease;
 }
 
+/* ---------------member info--------------- */
 .member-info {
     width: 100%;
     background-color: #001220;
     position: relative;
 }
 
-.member-info div:first-child {
-    z-index: 1;
-    /* position: absolute; */
+.member-info .container-v2 *{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 12px;
 }
 
-.member-info div:nth-child(n+2) {
-    z-index: 10;
-    background-color: #ba1e48;
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-/* .transitional-svg {
+.layered-wave {
+    background-image: url("../resources/images/transition/layered-waves-haikei-2.svg");
+}
+
+.layered-wave-out {
+    background-image: url(../resources/images/transition/layered-waves-haikei-3.svg);
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip em{
+    border-bottom: 1px dotted black; /*If you want dots under the hoverable text; */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: rgb(24, 18, 26);
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+   
+    /* Position the tooltip text*/
     position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: 1;
+  }
 
-} */
+.tooltiptext.visible {
+    visibility: visible;
+  }
 
-/* ------------------------------project section------------------------------ */
+.subheader{
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tab_content {
+    display: none;
+}
+
+.tab_content.tab-active {
+    display: block;
+}
+
+
+/* ------------------------------Project section------------------------------ */
 .container-v2 {
     width: 80%;
     height: auto;
     margin: 0 auto;
-}
-
-.center h2 {
-    text-align: center;
-    font-size: 2.5rem;
 }
 
 .pj-body a {
@@ -337,6 +393,79 @@ span {
     margin: 2rem;
 }
 
+/* ------------------------------Footer section------------------------------ */
+footer{
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    margin-top: 12px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* margin-top: 12px; */
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 25px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: rgb(239, 35, 66);
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
 
 
 /* Don't mind this */
