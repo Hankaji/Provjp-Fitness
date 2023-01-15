@@ -35,6 +35,10 @@ p {
     /* box-shadow: 0px 1px 15px 1px #bababa; */
 }
 
+#nav-bar.compact {
+    box-shadow: 0px 1px 15px 1px #bababa;
+}
+
 #hero nav.active {
     box-shadow: 0px 1px 15px 1px #bababa;
     transition: box-shadow 0.5s ease;
@@ -65,6 +69,10 @@ nav img {
 }
 
 /* ------------------------------Project description------------------------------ */
+#table-of-content {
+    font-size: 1.2rem;
+}
+
 /* ---------------Content--------------- */
 .content {
     flex-basis: 75%;
@@ -88,11 +96,79 @@ nav img {
     padding-top: 5px;
     margin-bottom: 8px;
 }
+/* ---------------Drop down menu--------------- */
+.table-of-content-block {
+    position: sticky;
+    top: 100px;
+}
+
+
+.dropdown i {
+    position: absolute;
+    z-index: 5;
+    font-size: 2.5rem;
+    right: 0;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.dropdown i.active {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    width: 80%;
+    height: 2.5rem;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+}
+
+.dropdown input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 56, 59, 0.25);
+}
+
+.dropdown .page-option {
+    position: absolute;
+    top: 3.5rem;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 56, 59, 0.25);
+    display: none;
+}
+
+.dropdown .page-option.active {
+    display: block;
+}
+
+.dropdown .page-option div {
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.dropdown .page-option div:hover {
+    background-color: rgb(16, 242, 242);
+}
+
+.dropdown .page-option a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* ---------------Table of content--------------- */
 .container {
     width: 85%;
-    /* height: 200px; */
     margin: auto;
     /* background-color: black; */
 }
@@ -103,7 +179,7 @@ nav img {
 
 
 
-.table-of-content {
+#table-of-content {
     flex-basis: 25%;
     /* background-color: #718570; */
 }
@@ -124,8 +200,6 @@ nav img {
 nav.toc {
     width: 80%;
     margin: 0 auto;
-    padding-top: 25px;
-    font-size: 1.2rem;
 }
 
 .li-header {

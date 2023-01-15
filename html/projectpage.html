@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\css\projectpage.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="../js/projectpage.js" defer></script>
     <title>Project description</title>
 </head>
@@ -130,21 +131,34 @@
                 <p>
                     We arrange online meetings via Teams on Fridays; in these meetings, we usually deal with our report, presentation by adding suitable information, reformatting and consulting together. We also hold offline meetings but they are not so often because we do not have enough time to meet up in the same time (we only met face-to-face twice apart from tutorial lessons, once in Monday and once in Saturday); we usually choose a coffee shop, sit in a large table and we get down to work. This is where we mostly do our prototype. Our team has a guy that is appointed to be the leader of this topic; he would be mainly in charge of coding, debugging the app and the rest would help him in designing and sorting issues that could appear.
                 </p>
-                <h2></h2>
             </div>
             <!-- table of content -->
-            <div class="table-of-content">
-                <nav class="toc">
-                    <ul>
-                        <!-- <li><a href="#" class="li-header">Overview</a>
-                            <ul class="nested-li">
-                                <li>Topic</li>
-                                <li>Motivation</li>
-                                <li>Lanescape</li>
-                            </ul>
-                        </li> -->
-                    </ul>
-                </nav>
+            <div id="table-of-content">
+                <div class="table-of-content-block">
+                    <!-- dropdown menu -->
+                    <div class="dropdown">
+                        <i class="ri-arrow-drop-down-line dropbox"></i>
+                        <input type="text" class="dropbox" placeholder="select page" readonly>
+                        <div class="page-option">
+                            <a href="projectpage.html"><div>Project description</div></a>
+                            <a href="skillsnjobs.html"><div>Skills and jobs</div></a>
+                            <a href="projectoutcomes.html"><div>Project outcomes</div></a>
+                        </div>
+                    </div>
+
+                    <!-- page toc -->
+                    <nav class="toc">
+                        <ul>
+                            <!-- <li><a href="#" class="li-header">Overview</a>
+                                <ul class="nested-li">
+                                    <li>Topic</li>
+                                    <li>Motivation</li>
+                                    <li>Lanescape</li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </section>
